@@ -14,7 +14,7 @@ public class GetProductByID {
 
     @Step("I set API endpoint with an valid ID to get product by ID")
     public String setApiGetEndValidIdProduct(){
-        return url + "products/88700";
+        return url + "products/88725";
     }
 
     @Step("I send request to get product using valid ID")

@@ -14,7 +14,7 @@ public class AssignProductRating {
     private static String url = "https://altashop-api.fly.dev/api/";
     @Step("I set API endpoint for assign a product rating")
     public String setApiRating() {
-        return url + "products/88700/ratings";
+        return url + "products/88725/ratings";
     }
 
     @Step("I send request to fill product rating")
