@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/Welcome",
+  "definitions": {
+    "Welcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "required": [
+        "data"
+      ],
+      "title": "Welcome"
+    },
+    "Data": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "User": {
+          "$ref": "#/definitions/User"
+        },
+        "Product": {
+          "type": "null"
+        },
+        "Quantity": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ID",
+        "Product",
+        "Quantity",
+        "User"
+      ],
+      "title": "Data"
+    },
+    "User": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ID": {
+          "type": "integer"
+        },
+        "Fullname": {
+          "type": "string"
+        },
+        "Email": {
+          "type": "string"
+        },
+        "Password": {
+          "type": "string",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "Email",
+        "Fullname",
+        "ID",
+        "Password"
+      ],
+      "title": "User"
+    }
+  }
+}
